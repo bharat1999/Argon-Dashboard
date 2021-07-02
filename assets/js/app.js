@@ -24,7 +24,7 @@ function show(data) {
     // Loop to access all rows 
     for (let r of data.clients) {
         tab += `<tr>
-        <td>
+        <td class="text-primary font-weight-bold">
           ${r.id}
         </td>
         <td>
@@ -34,7 +34,7 @@ function show(data) {
             ${r.company}
         </td>
         <td>
-            ${r.orderID}
+            ${r.orderId}
         </td>
         <td>
             ${r.invoicepaid}
@@ -47,5 +47,5 @@ function show(data) {
     // Setting innerHTML as tab variable
     console.log("done")
     document.getElementById("tableBody").innerHTML = tab;
-    document.getElementById("tableBody").classList.remove("d-none")
+    document.getElementById("t1").classList.remove("d-none")
 }
