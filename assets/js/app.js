@@ -19,7 +19,7 @@ getData()
 
 
 function show(data) {
-    let tab 
+    let tab = ``
     
     // Loop to access all rows 
     for (let r of data.clients) {
